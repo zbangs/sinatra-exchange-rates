@@ -1,0 +1,10 @@
+<h1> Convert <%= @from %></h1>
+<p>Go <a href="/">back</a>
+
+<% @exrt_list.each do |curr| %>
+  <li>
+    <a href="/<%= @from + "/" + curr %>">
+      Convert 1 <%= @from %> to <%= curr %>...
+    </a>
+  </li>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Currency pairs</h1>
+
+<% @exrt_list.each do |curr| 
+  <li>
+    <a href="/<%= curr %>">Convert 1 <%= curr %> to...</a>
+  </li>
+<% end %>
